@@ -1,0 +1,66 @@
+[2022-01-03 00:26:54,172] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.database_processing_print_cycle manual__2022-01-03T00:26:13.208871+00:00 [queued]>
+[2022-01-03 00:26:54,211] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.database_processing_print_cycle manual__2022-01-03T00:26:13.208871+00:00 [queued]>
+[2022-01-03 00:26:54,211] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 00:26:54,212] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-03 00:26:54,212] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 00:26:54,244] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): database_processing_print_cycle> on 2022-01-03 00:26:13.208871+00:00
+[2022-01-03 00:26:54,252] {standard_task_runner.py:52} INFO - Started process 2614 to run task
+[2022-01-03 00:26:54,257] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'database_processing_print_cycle', 'manual__2022-01-03T00:26:13.208871+00:00', '--job-id', '1987', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmput1t_epk', '--error-file', '/tmp/tmpn45yd7cg']
+[2022-01-03 00:26:54,263] {standard_task_runner.py:77} INFO - Job 1987: Subtask database_processing_print_cycle
+[2022-01-03 00:26:54,354] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.database_processing_print_cycle manual__2022-01-03T00:26:13.208871+00:00 [running]> on host 218df5ddc363
+[2022-01-03 00:26:54,488] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=database_processing_print_cycle
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-03T00:26:13.208871+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-03T00:26:13.208871+00:00
+[2022-01-03 00:26:55,294] {logging_mixin.py:109} INFO - You're connected to database
+[2022-01-03 00:26:55,743] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/database_processing_print_cycle.py", line 31, in database_processing_print_cycle
+    updatedDatabaseData = pd.concat([print_cycle, databaseContents])
+UnboundLocalError: local variable 'print_cycle' referenced before assignment
+[2022-01-03 00:26:55,772] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=cpp_workflow, task_id=database_processing_print_cycle, execution_date=20220103T002613, start_date=20220103T002654, end_date=20220103T002655
+[2022-01-03 00:26:55,796] {standard_task_runner.py:91} ERROR - Failed to execute job 1987 for task database_processing_print_cycle
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/database_processing_print_cycle.py", line 31, in database_processing_print_cycle
+    updatedDatabaseData = pd.concat([print_cycle, databaseContents])
+UnboundLocalError: local variable 'print_cycle' referenced before assignment
+[2022-01-03 00:26:55,809] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-01-03 00:26:55,880] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

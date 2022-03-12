@@ -1,0 +1,24 @@
+[2021-12-27 12:13:32,876] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-27T12:13:20.322204+00:00 [queued]>
+[2021-12-27 12:13:32,893] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-27T12:13:20.322204+00:00 [queued]>
+[2021-12-27 12:13:32,893] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-27 12:13:32,894] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-27 12:13:32,895] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-27 12:13:32,914] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): connect_to_database> on 2021-12-27 12:13:20.322204+00:00
+[2021-12-27 12:13:32,920] {standard_task_runner.py:52} INFO - Started process 3404 to run task
+[2021-12-27 12:13:32,926] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'connect_to_database', 'manual__2021-12-27T12:13:20.322204+00:00', '--job-id', '1593', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpyv9jd4of', '--error-file', '/tmp/tmpqd137ccc']
+[2021-12-27 12:13:32,927] {standard_task_runner.py:77} INFO - Job 1593: Subtask connect_to_database
+[2021-12-27 12:13:32,990] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-27T12:13:20.322204+00:00 [running]> on host 218df5ddc363
+[2021-12-27 12:13:33,060] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=connect_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-27T12:13:20.322204+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-27T12:13:20.322204+00:00
+[2021-12-27 12:13:33,604] {logging_mixin.py:109} INFO - You're connected to database
+[2021-12-27 12:13:34,180] {logging_mixin.py:109} INFO - Error while connecting to the database 1054 (42S22): Unknown column 'image_legth' in 'field list'
+[2021-12-27 12:13:34,181] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-27 12:13:34,250] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=connect_to_database, execution_date=20211227T121320, start_date=20211227T121332, end_date=20211227T121334
+[2021-12-27 12:13:34,302] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-27 12:13:34,333] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

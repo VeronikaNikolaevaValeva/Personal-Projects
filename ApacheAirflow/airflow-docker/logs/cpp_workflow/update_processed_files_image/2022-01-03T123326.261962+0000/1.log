@@ -1,0 +1,22 @@
+[2022-01-03 12:34:21,084] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.update_processed_files_image manual__2022-01-03T12:33:26.261962+00:00 [queued]>
+[2022-01-03 12:34:21,102] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.update_processed_files_image manual__2022-01-03T12:33:26.261962+00:00 [queued]>
+[2022-01-03 12:34:21,103] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 12:34:21,103] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-03 12:34:21,104] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 12:34:21,122] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): update_processed_files_image> on 2022-01-03 12:33:26.261962+00:00
+[2022-01-03 12:34:21,127] {standard_task_runner.py:52} INFO - Started process 1481 to run task
+[2022-01-03 12:34:21,132] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'update_processed_files_image', 'manual__2022-01-03T12:33:26.261962+00:00', '--job-id', '2395', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp_kq8y6h6', '--error-file', '/tmp/tmpoq1y3utz']
+[2022-01-03 12:34:21,134] {standard_task_runner.py:77} INFO - Job 2395: Subtask update_processed_files_image
+[2022-01-03 12:34:21,199] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.update_processed_files_image manual__2022-01-03T12:33:26.261962+00:00 [running]> on host 218df5ddc363
+[2022-01-03 12:34:21,288] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=update_processed_files_image
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-03T12:33:26.261962+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-03T12:33:26.261962+00:00
+[2022-01-03 12:34:21,310] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-03 12:34:21,327] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=update_processed_files_image, execution_date=20220103T123326, start_date=20220103T123421, end_date=20220103T123421
+[2022-01-03 12:34:21,385] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-03 12:34:21,432] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

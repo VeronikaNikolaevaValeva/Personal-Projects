@@ -1,0 +1,25 @@
+[2021-12-08 22:10:54,494] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process manual__2021-12-08T22:10:25.650879+00:00 [queued]>
+[2021-12-08 22:10:54,514] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process manual__2021-12-08T22:10:25.650879+00:00 [queued]>
+[2021-12-08 22:10:54,515] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 22:10:54,515] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-08 22:10:54,516] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 22:10:54,534] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): col_process> on 2021-12-08 22:10:25.650879+00:00
+[2021-12-08 22:10:54,542] {standard_task_runner.py:52} INFO - Started process 3002 to run task
+[2021-12-08 22:10:54,547] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'col_process', 'manual__2021-12-08T22:10:25.650879+00:00', '--job-id', '521', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmptue50_m2', '--error-file', '/tmp/tmpxejtqnr_']
+[2021-12-08 22:10:54,548] {standard_task_runner.py:77} INFO - Job 521: Subtask col_process
+[2021-12-08 22:10:54,647] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.col_process manual__2021-12-08T22:10:25.650879+00:00 [running]> on host b5fd0372bf6e
+[2021-12-08 22:10:54,728] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=col_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-08T22:10:25.650879+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-08T22:10:25.650879+00:00
+[2021-12-08 22:10:59,023] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:162: DtypeWarning: Columns (1,2,3,4) have mixed types.Specify dtype option on import or set low_memory=False.
+  return self.python_callable(*self.op_args, **self.op_kwargs)
+
+[2021-12-08 22:11:15,931] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-08 22:11:15,945] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=col_process, execution_date=20211208T221025, start_date=20211208T221054, end_date=20211208T221115
+[2021-12-08 22:11:16,003] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-08 22:11:16,061] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

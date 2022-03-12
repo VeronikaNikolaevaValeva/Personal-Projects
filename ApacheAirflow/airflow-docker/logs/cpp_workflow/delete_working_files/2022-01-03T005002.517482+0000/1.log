@@ -1,0 +1,22 @@
+[2022-01-03 00:50:48,298] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.delete_working_files manual__2022-01-03T00:50:02.517482+00:00 [queued]>
+[2022-01-03 00:50:48,314] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.delete_working_files manual__2022-01-03T00:50:02.517482+00:00 [queued]>
+[2022-01-03 00:50:48,315] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 00:50:48,315] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-03 00:50:48,316] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-03 00:50:48,335] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): delete_working_files> on 2022-01-03 00:50:02.517482+00:00
+[2022-01-03 00:50:48,341] {standard_task_runner.py:52} INFO - Started process 3912 to run task
+[2022-01-03 00:50:48,346] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'delete_working_files', 'manual__2022-01-03T00:50:02.517482+00:00', '--job-id', '2074', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmphycus2xi', '--error-file', '/tmp/tmp177qa549']
+[2022-01-03 00:50:48,348] {standard_task_runner.py:77} INFO - Job 2074: Subtask delete_working_files
+[2022-01-03 00:50:48,401] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.delete_working_files manual__2022-01-03T00:50:02.517482+00:00 [running]> on host 218df5ddc363
+[2022-01-03 00:50:48,467] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=delete_working_files
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-03T00:50:02.517482+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-03T00:50:02.517482+00:00
+[2022-01-03 00:50:48,478] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-03 00:50:48,493] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=delete_working_files, execution_date=20220103T005002, start_date=20220103T005048, end_date=20220103T005048
+[2022-01-03 00:50:48,559] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-03 00:50:48,606] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

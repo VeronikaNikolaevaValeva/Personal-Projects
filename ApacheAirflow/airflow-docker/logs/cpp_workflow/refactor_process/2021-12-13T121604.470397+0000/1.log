@@ -1,0 +1,22 @@
+[2021-12-13 12:16:13,983] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process manual__2021-12-13T12:16:04.470397+00:00 [queued]>
+[2021-12-13 12:16:14,001] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process manual__2021-12-13T12:16:04.470397+00:00 [queued]>
+[2021-12-13 12:16:14,002] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 12:16:14,002] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-13 12:16:14,004] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 12:16:14,024] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): refactor_process> on 2021-12-13 12:16:04.470397+00:00
+[2021-12-13 12:16:14,059] {standard_task_runner.py:52} INFO - Started process 2699 to run task
+[2021-12-13 12:16:14,064] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'refactor_process', 'manual__2021-12-13T12:16:04.470397+00:00', '--job-id', '954', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpd95wkgoq', '--error-file', '/tmp/tmpm4xihck5']
+[2021-12-13 12:16:14,065] {standard_task_runner.py:77} INFO - Job 954: Subtask refactor_process
+[2021-12-13 12:16:14,137] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.refactor_process manual__2021-12-13T12:16:04.470397+00:00 [running]> on host 218df5ddc363
+[2021-12-13 12:16:14,205] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=refactor_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-13T12:16:04.470397+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-13T12:16:04.470397+00:00
+[2021-12-13 12:16:14,282] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-13 12:16:14,302] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=refactor_process, execution_date=20211213T121604, start_date=20211213T121613, end_date=20211213T121614
+[2021-12-13 12:16:14,356] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-13 12:16:14,403] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

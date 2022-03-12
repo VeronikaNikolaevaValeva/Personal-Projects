@@ -1,0 +1,22 @@
+[2022-01-12 10:53:52,585] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process_media_prepare scheduled__2022-01-11T00:00:00+00:00 [queued]>
+[2022-01-12 10:53:52,605] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process_media_prepare scheduled__2022-01-11T00:00:00+00:00 [queued]>
+[2022-01-12 10:53:52,606] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-12 10:53:52,606] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-12 10:53:52,607] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-12 10:53:52,630] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): refactor_process_media_prepare> on 2022-01-11 00:00:00+00:00
+[2022-01-12 10:53:52,638] {standard_task_runner.py:52} INFO - Started process 106 to run task
+[2022-01-12 10:53:52,645] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'refactor_process_media_prepare', 'scheduled__2022-01-11T00:00:00+00:00', '--job-id', '2646', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpzlmz7vz9', '--error-file', '/tmp/tmp4qfjfdzn']
+[2022-01-12 10:53:52,647] {standard_task_runner.py:77} INFO - Job 2646: Subtask refactor_process_media_prepare
+[2022-01-12 10:53:52,735] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.refactor_process_media_prepare scheduled__2022-01-11T00:00:00+00:00 [running]> on host 218df5ddc363
+[2022-01-12 10:53:52,819] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=refactor_process_media_prepare
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-11T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-11T00:00:00+00:00
+[2022-01-12 10:53:52,823] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-12 10:53:52,845] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=refactor_process_media_prepare, execution_date=20220111T000000, start_date=20220112T105352, end_date=20220112T105352
+[2022-01-12 10:53:52,899] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-12 10:53:52,966] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

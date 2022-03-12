@@ -1,0 +1,22 @@
+[2022-01-06 15:03:34,730] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.update_processed_files_media_prepare scheduled__2022-01-05T00:00:00+00:00 [queued]>
+[2022-01-06 15:03:34,763] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.update_processed_files_media_prepare scheduled__2022-01-05T00:00:00+00:00 [queued]>
+[2022-01-06 15:03:34,764] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-06 15:03:34,764] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-06 15:03:34,765] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-06 15:03:34,805] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): update_processed_files_media_prepare> on 2022-01-05 00:00:00+00:00
+[2022-01-06 15:03:34,814] {standard_task_runner.py:52} INFO - Started process 239 to run task
+[2022-01-06 15:03:34,826] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'update_processed_files_media_prepare', 'scheduled__2022-01-05T00:00:00+00:00', '--job-id', '2480', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpxy_968z3', '--error-file', '/tmp/tmpqap_g01q']
+[2022-01-06 15:03:34,830] {standard_task_runner.py:77} INFO - Job 2480: Subtask update_processed_files_media_prepare
+[2022-01-06 15:03:34,933] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.update_processed_files_media_prepare scheduled__2022-01-05T00:00:00+00:00 [running]> on host 218df5ddc363
+[2022-01-06 15:03:35,016] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=update_processed_files_media_prepare
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-05T00:00:00+00:00
+[2022-01-06 15:03:35,044] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-06 15:03:35,078] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=update_processed_files_media_prepare, execution_date=20220105T000000, start_date=20220106T150334, end_date=20220106T150335
+[2022-01-06 15:03:35,167] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-06 15:03:35,284] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

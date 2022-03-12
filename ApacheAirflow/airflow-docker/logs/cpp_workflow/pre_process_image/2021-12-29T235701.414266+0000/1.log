@@ -1,0 +1,22 @@
+[2021-12-29 23:57:33,963] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process_image manual__2021-12-29T23:57:01.414266+00:00 [queued]>
+[2021-12-29 23:57:33,982] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process_image manual__2021-12-29T23:57:01.414266+00:00 [queued]>
+[2021-12-29 23:57:33,983] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-29 23:57:33,983] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-29 23:57:33,984] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-29 23:57:34,003] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): pre_process_image> on 2021-12-29 23:57:01.414266+00:00
+[2021-12-29 23:57:34,009] {standard_task_runner.py:52} INFO - Started process 15897 to run task
+[2021-12-29 23:57:34,017] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'pre_process_image', 'manual__2021-12-29T23:57:01.414266+00:00', '--job-id', '1752', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpe5gt2d03', '--error-file', '/tmp/tmp5q9plm0f']
+[2021-12-29 23:57:34,018] {standard_task_runner.py:77} INFO - Job 1752: Subtask pre_process_image
+[2021-12-29 23:57:34,089] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.pre_process_image manual__2021-12-29T23:57:01.414266+00:00 [running]> on host 218df5ddc363
+[2021-12-29 23:57:34,166] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=pre_process_image
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-29T23:57:01.414266+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-29T23:57:01.414266+00:00
+[2021-12-29 23:57:34,168] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-29 23:57:34,203] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=pre_process_image, execution_date=20211229T235701, start_date=20211229T235733, end_date=20211229T235734
+[2021-12-29 23:57:34,230] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-29 23:57:34,493] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

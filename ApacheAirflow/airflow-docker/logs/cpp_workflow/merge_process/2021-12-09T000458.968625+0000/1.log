@@ -1,0 +1,65 @@
+[2021-12-09 00:05:15,214] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.merge_process manual__2021-12-09T00:04:58.968625+00:00 [queued]>
+[2021-12-09 00:05:15,228] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.merge_process manual__2021-12-09T00:04:58.968625+00:00 [queued]>
+[2021-12-09 00:05:15,228] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-09 00:05:15,229] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-09 00:05:15,229] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-09 00:05:15,245] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): merge_process> on 2021-12-09 00:04:58.968625+00:00
+[2021-12-09 00:05:15,253] {standard_task_runner.py:52} INFO - Started process 8449 to run task
+[2021-12-09 00:05:15,258] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'merge_process', 'manual__2021-12-09T00:04:58.968625+00:00', '--job-id', '693', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpqoleldcv', '--error-file', '/tmp/tmpiler4wuo']
+[2021-12-09 00:05:15,260] {standard_task_runner.py:77} INFO - Job 693: Subtask merge_process
+[2021-12-09 00:05:15,320] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.merge_process manual__2021-12-09T00:04:58.968625+00:00 [running]> on host b5fd0372bf6e
+[2021-12-09 00:05:15,374] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=merge_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-09T00:04:58.968625+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-09T00:04:58.968625+00:00
+[2021-12-09 00:05:15,406] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/merge_processing.py", line 24, in merge_process
+    how='outer')
+TypeError: merge() got multiple values for argument 'how'
+[2021-12-09 00:05:15,428] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=cpp_workflow, task_id=merge_process, execution_date=20211209T000458, start_date=20211209T000515, end_date=20211209T000515
+[2021-12-09 00:05:15,447] {standard_task_runner.py:91} ERROR - Failed to execute job 693 for task merge_process
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 151, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 162, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/merge_processing.py", line 24, in merge_process
+    how='outer')
+TypeError: merge() got multiple values for argument 'how'
+[2021-12-09 00:05:15,470] {local_task_job.py:154} INFO - Task exited with return code 1
+[2021-12-09 00:05:15,545] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

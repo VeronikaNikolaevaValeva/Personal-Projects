@@ -1,0 +1,22 @@
+[2021-12-08 15:03:31,974] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database scheduled__2021-11-19T00:00:00+00:00 [queued]>
+[2021-12-08 15:03:32,003] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database scheduled__2021-11-19T00:00:00+00:00 [queued]>
+[2021-12-08 15:03:32,003] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 15:03:32,004] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-08 15:03:32,004] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 15:03:32,049] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): connect_to_database> on 2021-11-19 00:00:00+00:00
+[2021-12-08 15:03:32,058] {standard_task_runner.py:52} INFO - Started process 1264 to run task
+[2021-12-08 15:03:32,068] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'connect_to_database', 'scheduled__2021-11-19T00:00:00+00:00', '--job-id', '417', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpeqwb9a49', '--error-file', '/tmp/tmppe2wbrd8']
+[2021-12-08 15:03:32,071] {standard_task_runner.py:77} INFO - Job 417: Subtask connect_to_database
+[2021-12-08 15:03:32,180] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.connect_to_database scheduled__2021-11-19T00:00:00+00:00 [running]> on host 8edf9af2b560
+[2021-12-08 15:03:32,365] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=connect_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-19T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-19T00:00:00+00:00
+[2021-12-08 15:03:32,965] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-08 15:03:33,033] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=connect_to_database, execution_date=20211119T000000, start_date=20211208T150331, end_date=20211208T150333
+[2021-12-08 15:03:33,127] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-08 15:03:33,845] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

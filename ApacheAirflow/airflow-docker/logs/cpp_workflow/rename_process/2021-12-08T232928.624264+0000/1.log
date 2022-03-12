@@ -1,0 +1,31 @@
+[2021-12-08 23:29:39,380] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.rename_process manual__2021-12-08T23:29:28.624264+00:00 [queued]>
+[2021-12-08 23:29:39,392] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.rename_process manual__2021-12-08T23:29:28.624264+00:00 [queued]>
+[2021-12-08 23:29:39,392] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:29:39,392] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-08 23:29:39,393] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:29:39,406] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): rename_process> on 2021-12-08 23:29:28.624264+00:00
+[2021-12-08 23:29:39,411] {standard_task_runner.py:52} INFO - Started process 6766 to run task
+[2021-12-08 23:29:39,415] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'rename_process', 'manual__2021-12-08T23:29:28.624264+00:00', '--job-id', '637', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp9n7sl4yn', '--error-file', '/tmp/tmp7lszkiz6']
+[2021-12-08 23:29:39,416] {standard_task_runner.py:77} INFO - Job 637: Subtask rename_process
+[2021-12-08 23:29:39,460] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.rename_process manual__2021-12-08T23:29:28.624264+00:00 [running]> on host b5fd0372bf6e
+[2021-12-08 23:29:39,513] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=rename_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-08T23:29:28.624264+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-08T23:29:28.624264+00:00
+[2021-12-08 23:29:39,525] {warnings.py:110} WARNING - /opt/***/dags/rename_processing.py:10: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+  dateparse = lambda x: pd.datetime.strptime(x, "%Y-%m-%d")
+
+[2021-12-08 23:29:39,544] {warnings.py:110} WARNING - /opt/***/dags/rename_processing.py:10: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+  dateparse = lambda x: pd.datetime.strptime(x, "%Y-%m-%d")
+
+[2021-12-08 23:29:39,557] {warnings.py:110} WARNING - /opt/***/dags/rename_processing.py:10: FutureWarning: The pandas.datetime class is deprecated and will be removed from pandas in a future version. Import from datetime module instead.
+  dateparse = lambda x: pd.datetime.strptime(x, "%Y-%m-%d")
+
+[2021-12-08 23:29:39,583] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-08 23:29:39,595] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=rename_process, execution_date=20211208T232928, start_date=20211208T232939, end_date=20211208T232939
+[2021-12-08 23:29:39,628] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-08 23:29:39,660] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

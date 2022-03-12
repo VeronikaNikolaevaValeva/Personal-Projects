@@ -1,0 +1,22 @@
+[2021-12-20 12:54:39,072] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.merge_process manual__2021-12-20T12:54:14.087949+00:00 [queued]>
+[2021-12-20 12:54:39,106] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.merge_process manual__2021-12-20T12:54:14.087949+00:00 [queued]>
+[2021-12-20 12:54:39,106] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 12:54:39,107] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-20 12:54:39,108] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-20 12:54:39,140] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): merge_process> on 2021-12-20 12:54:14.087949+00:00
+[2021-12-20 12:54:39,150] {standard_task_runner.py:52} INFO - Started process 2667 to run task
+[2021-12-20 12:54:39,158] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'merge_process', 'manual__2021-12-20T12:54:14.087949+00:00', '--job-id', '1495', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpgmyy3ex9', '--error-file', '/tmp/tmp7nl2nq2q']
+[2021-12-20 12:54:39,162] {standard_task_runner.py:77} INFO - Job 1495: Subtask merge_process
+[2021-12-20 12:54:39,260] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.merge_process manual__2021-12-20T12:54:14.087949+00:00 [running]> on host 218df5ddc363
+[2021-12-20 12:54:39,373] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=merge_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-20T12:54:14.087949+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-20T12:54:14.087949+00:00
+[2021-12-20 12:54:39,600] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-20 12:54:39,629] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=merge_process, execution_date=20211220T125414, start_date=20211220T125439, end_date=20211220T125439
+[2021-12-20 12:54:39,695] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-20 12:54:39,773] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

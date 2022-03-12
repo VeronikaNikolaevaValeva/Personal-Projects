@@ -1,0 +1,21 @@
+[2021-12-08 14:44:56,132] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process scheduled__2021-07-10T00:00:00+00:00 [queued]>
+[2021-12-08 14:44:56,183] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process scheduled__2021-07-10T00:00:00+00:00 [queued]>
+[2021-12-08 14:44:56,184] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 14:44:56,185] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-08 14:44:56,188] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 14:44:56,227] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): pre_process> on 2021-07-10 00:00:00+00:00
+[2021-12-08 14:44:56,236] {standard_task_runner.py:52} INFO - Started process 127 to run task
+[2021-12-08 14:44:56,243] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'pre_process', 'scheduled__2021-07-10T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp_d706kzp', '--error-file', '/tmp/tmpt2j8rncc']
+[2021-12-08 14:44:56,246] {standard_task_runner.py:77} INFO - Job 119: Subtask pre_process
+[2021-12-08 14:44:56,376] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.pre_process scheduled__2021-07-10T00:00:00+00:00 [running]> on host 6ff10d26dc07
+[2021-12-08 14:44:56,648] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=pre_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-10T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-07-10T00:00:00+00:00
+[2021-12-08 14:45:13,564] {local_task_job.py:154} INFO - Task exited with return code Negsignal.SIGKILL
+[2021-12-08 14:45:13,652] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=cpp_workflow, task_id=pre_process, execution_date=20210710T000000, start_date=20211208T144456, end_date=20211208T144513
+[2021-12-08 14:45:13,807] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

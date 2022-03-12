@@ -1,0 +1,22 @@
+[2021-12-13 14:20:10,535] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process manual__2021-12-13T14:20:04.521135+00:00 [queued]>
+[2021-12-13 14:20:10,581] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process manual__2021-12-13T14:20:04.521135+00:00 [queued]>
+[2021-12-13 14:20:10,583] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 14:20:10,583] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-13 14:20:10,584] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 14:20:10,621] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): pre_process> on 2021-12-13 14:20:04.521135+00:00
+[2021-12-13 14:20:10,637] {standard_task_runner.py:52} INFO - Started process 8922 to run task
+[2021-12-13 14:20:10,643] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'pre_process', 'manual__2021-12-13T14:20:04.521135+00:00', '--job-id', '1205', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp6ahlt__j', '--error-file', '/tmp/tmp67dy4jtk']
+[2021-12-13 14:20:10,645] {standard_task_runner.py:77} INFO - Job 1205: Subtask pre_process
+[2021-12-13 14:20:10,757] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.pre_process manual__2021-12-13T14:20:04.521135+00:00 [running]> on host 218df5ddc363
+[2021-12-13 14:20:10,871] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=pre_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-13T14:20:04.521135+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-13T14:20:04.521135+00:00
+[2021-12-13 14:20:11,012] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-13 14:20:11,132] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=pre_process, execution_date=20211213T142004, start_date=20211213T142010, end_date=20211213T142011
+[2021-12-13 14:20:11,206] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-13 14:20:11,320] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

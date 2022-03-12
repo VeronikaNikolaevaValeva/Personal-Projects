@@ -1,0 +1,27 @@
+[2021-12-08 23:26:44,197] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.check_printCycleFile manual__2021-12-08T23:26:41.728263+00:00 [queued]>
+[2021-12-08 23:26:44,231] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.check_printCycleFile manual__2021-12-08T23:26:41.728263+00:00 [queued]>
+[2021-12-08 23:26:44,232] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:26:44,233] {taskinstance.py:1242} INFO - Starting attempt 1 of 3
+[2021-12-08 23:26:44,233] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:26:44,284] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): check_printCycleFile> on 2021-12-08 23:26:41.728263+00:00
+[2021-12-08 23:26:44,295] {standard_task_runner.py:52} INFO - Started process 6592 to run task
+[2021-12-08 23:26:44,302] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'check_printCycleFile', 'manual__2021-12-08T23:26:41.728263+00:00', '--job-id', '622', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpt2se_uo2', '--error-file', '/tmp/tmp8dmgfdx0']
+[2021-12-08 23:26:44,306] {standard_task_runner.py:77} INFO - Job 622: Subtask check_printCycleFile
+[2021-12-08 23:26:44,408] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.check_printCycleFile manual__2021-12-08T23:26:41.728263+00:00 [running]> on host b5fd0372bf6e
+[2021-12-08 23:26:44,629] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=check_printCycleFile
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-08T23:26:41.728263+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-08T23:26:41.728263+00:00
+[2021-12-08 23:26:44,632] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-08 23:26:44,644] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'sha256sum /opt/***/official_data/PrintCycle.csv']
+[2021-12-08 23:26:44,700] {subprocess.py:85} INFO - Output:
+[2021-12-08 23:26:44,731] {subprocess.py:89} INFO - 78858cc4f604ffaf035d224054c7add9dd3d581b3895ebe52793396fb8556b0e  /opt/***/official_data/PrintCycle.csv
+[2021-12-08 23:26:44,735] {subprocess.py:93} INFO - Command exited with return code 0
+[2021-12-08 23:26:44,837] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=check_printCycleFile, execution_date=20211208T232641, start_date=20211208T232644, end_date=20211208T232644
+[2021-12-08 23:26:44,975] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-08 23:26:45,163] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,23 @@
+[2021-12-17 12:31:20,424] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process scheduled__2021-12-15T00:00:00+00:00 [queued]>
+[2021-12-17 12:31:20,437] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process scheduled__2021-12-15T00:00:00+00:00 [queued]>
+[2021-12-17 12:31:20,445] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-17 12:31:20,445] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-17 12:31:20,446] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-17 12:31:20,501] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): pre_process> on 2021-12-15 00:00:00+00:00
+[2021-12-17 12:31:20,535] {standard_task_runner.py:52} INFO - Started process 128 to run task
+[2021-12-17 12:31:20,835] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'pre_process', 'scheduled__2021-12-15T00:00:00+00:00', '--job-id', '1415', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp2y32x_kl', '--error-file', '/tmp/tmpf4kwg5h6']
+[2021-12-17 12:31:20,838] {standard_task_runner.py:77} INFO - Job 1415: Subtask pre_process
+[2021-12-17 12:31:32,188] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.pre_process scheduled__2021-12-15T00:00:00+00:00 [running]> on host 218df5ddc363
+[2021-12-17 12:31:34,140] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=pre_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-15T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-15T00:00:00+00:00
+[2021-12-17 12:31:37,211] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-17 12:31:37,861] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=pre_process, execution_date=20211215T000000, start_date=20211217T123120, end_date=20211217T123137
+[2021-12-17 12:31:38,182] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-12-17 12:31:38,253] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 128
+[2021-12-17 12:31:38,311] {process_utils.py:66} INFO - Process psutil.Process(pid=128, status='terminated', exitcode=0, started='12:31:19') (128) terminated with exit code 0

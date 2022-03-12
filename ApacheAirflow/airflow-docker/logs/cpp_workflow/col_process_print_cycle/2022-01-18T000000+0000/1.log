@@ -1,0 +1,22 @@
+[2022-01-19 11:26:50,821] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process_print_cycle scheduled__2022-01-18T00:00:00+00:00 [queued]>
+[2022-01-19 11:26:50,888] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process_print_cycle scheduled__2022-01-18T00:00:00+00:00 [queued]>
+[2022-01-19 11:26:50,893] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-19 11:26:50,895] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-19 11:26:50,909] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-19 11:26:51,012] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): col_process_print_cycle> on 2022-01-18 00:00:00+00:00
+[2022-01-19 11:26:51,043] {standard_task_runner.py:52} INFO - Started process 93 to run task
+[2022-01-19 11:26:51,052] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'col_process_print_cycle', 'scheduled__2022-01-18T00:00:00+00:00', '--job-id', '2776', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpcth4yc5t', '--error-file', '/tmp/tmp7qyqpitk']
+[2022-01-19 11:26:51,068] {standard_task_runner.py:77} INFO - Job 2776: Subtask col_process_print_cycle
+[2022-01-19 11:26:51,321] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.col_process_print_cycle scheduled__2022-01-18T00:00:00+00:00 [running]> on host 218df5ddc363
+[2022-01-19 11:26:51,629] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=col_process_print_cycle
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-18T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-18T00:00:00+00:00
+[2022-01-19 11:26:51,649] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-19 11:26:51,682] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=col_process_print_cycle, execution_date=20220118T000000, start_date=20220119T112650, end_date=20220119T112651
+[2022-01-19 11:26:51,787] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-19 11:26:51,962] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

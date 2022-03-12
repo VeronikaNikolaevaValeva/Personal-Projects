@@ -1,0 +1,22 @@
+[2022-01-14 11:25:36,238] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process_image scheduled__2022-01-13T00:00:00+00:00 [queued]>
+[2022-01-14 11:25:36,249] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.refactor_process_image scheduled__2022-01-13T00:00:00+00:00 [queued]>
+[2022-01-14 11:25:36,249] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-14 11:25:36,249] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-14 11:25:36,250] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-14 11:25:36,264] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): refactor_process_image> on 2022-01-13 00:00:00+00:00
+[2022-01-14 11:25:36,268] {standard_task_runner.py:52} INFO - Started process 92 to run task
+[2022-01-14 11:25:36,271] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'refactor_process_image', 'scheduled__2022-01-13T00:00:00+00:00', '--job-id', '2682', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmphjpt53b_', '--error-file', '/tmp/tmppdi1ws6q']
+[2022-01-14 11:25:36,272] {standard_task_runner.py:77} INFO - Job 2682: Subtask refactor_process_image
+[2022-01-14 11:25:36,317] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.refactor_process_image scheduled__2022-01-13T00:00:00+00:00 [running]> on host 218df5ddc363
+[2022-01-14 11:25:36,372] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=refactor_process_image
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-13T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-13T00:00:00+00:00
+[2022-01-14 11:25:36,375] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-14 11:25:36,390] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=refactor_process_image, execution_date=20220113T000000, start_date=20220114T112536, end_date=20220114T112536
+[2022-01-14 11:25:36,443] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-14 11:25:36,493] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

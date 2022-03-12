@@ -1,0 +1,22 @@
+[2021-12-09 00:38:50,862] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-09T00:38:38.596062+00:00 [queued]>
+[2021-12-09 00:38:50,879] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-09T00:38:38.596062+00:00 [queued]>
+[2021-12-09 00:38:50,879] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-09 00:38:50,880] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-09 00:38:50,880] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-09 00:38:50,900] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): connect_to_database> on 2021-12-09 00:38:38.596062+00:00
+[2021-12-09 00:38:50,906] {standard_task_runner.py:52} INFO - Started process 10070 to run task
+[2021-12-09 00:38:50,911] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'connect_to_database', 'manual__2021-12-09T00:38:38.596062+00:00', '--job-id', '748', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpfzwh8efp', '--error-file', '/tmp/tmpa7dajpbi']
+[2021-12-09 00:38:50,913] {standard_task_runner.py:77} INFO - Job 748: Subtask connect_to_database
+[2021-12-09 00:38:50,976] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.connect_to_database manual__2021-12-09T00:38:38.596062+00:00 [running]> on host b5fd0372bf6e
+[2021-12-09 00:38:51,052] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=connect_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-09T00:38:38.596062+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-09T00:38:38.596062+00:00
+[2021-12-09 00:38:51,311] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-09 00:38:51,332] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=connect_to_database, execution_date=20211209T003838, start_date=20211209T003850, end_date=20211209T003851
+[2021-12-09 00:38:51,366] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-09 00:38:51,412] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

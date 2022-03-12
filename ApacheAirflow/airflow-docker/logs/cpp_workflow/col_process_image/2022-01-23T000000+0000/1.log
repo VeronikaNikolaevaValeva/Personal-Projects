@@ -1,0 +1,22 @@
+[2022-01-26 20:36:37,639] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process_image scheduled__2022-01-23T00:00:00+00:00 [queued]>
+[2022-01-26 20:36:37,732] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process_image scheduled__2022-01-23T00:00:00+00:00 [queued]>
+[2022-01-26 20:36:37,733] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 20:36:37,737] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-01-26 20:36:37,737] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-26 20:36:37,882] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): col_process_image> on 2022-01-23 00:00:00+00:00
+[2022-01-26 20:36:37,897] {standard_task_runner.py:52} INFO - Started process 145 to run task
+[2022-01-26 20:36:37,919] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'col_process_image', 'scheduled__2022-01-23T00:00:00+00:00', '--job-id', '3011', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp7woxvtsg', '--error-file', '/tmp/tmpq4gkuc_3']
+[2022-01-26 20:36:37,921] {standard_task_runner.py:77} INFO - Job 3011: Subtask col_process_image
+[2022-01-26 20:36:38,174] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.col_process_image scheduled__2022-01-23T00:00:00+00:00 [running]> on host 218df5ddc363
+[2022-01-26 20:36:38,469] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=col_process_image
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-23T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-23T00:00:00+00:00
+[2022-01-26 20:36:38,487] {python.py:152} INFO - Done. Returned value was: None
+[2022-01-26 20:36:38,801] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=col_process_image, execution_date=20220123T000000, start_date=20220126T203637, end_date=20220126T203638
+[2022-01-26 20:36:38,877] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-26 20:36:39,111] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

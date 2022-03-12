@@ -1,0 +1,22 @@
+[2021-12-30 00:00:29,970] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process_image scheduled__2021-12-29T00:00:00+00:00 [queued]>
+[2021-12-30 00:00:29,997] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.pre_process_image scheduled__2021-12-29T00:00:00+00:00 [queued]>
+[2021-12-30 00:00:29,997] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-30 00:00:29,998] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-30 00:00:29,998] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-30 00:00:30,022] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): pre_process_image> on 2021-12-29 00:00:00+00:00
+[2021-12-30 00:00:30,033] {standard_task_runner.py:52} INFO - Started process 16052 to run task
+[2021-12-30 00:00:30,045] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'pre_process_image', 'scheduled__2021-12-29T00:00:00+00:00', '--job-id', '1762', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpywmofuod', '--error-file', '/tmp/tmp9sz3p0wb']
+[2021-12-30 00:00:30,047] {standard_task_runner.py:77} INFO - Job 1762: Subtask pre_process_image
+[2021-12-30 00:00:30,133] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.pre_process_image scheduled__2021-12-29T00:00:00+00:00 [running]> on host 218df5ddc363
+[2021-12-30 00:00:30,279] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=pre_process_image
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-29T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-29T00:00:00+00:00
+[2021-12-30 00:00:30,288] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-30 00:00:30,317] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=pre_process_image, execution_date=20211229T000000, start_date=20211230T000029, end_date=20211230T000030
+[2021-12-30 00:00:30,380] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-30 00:00:30,462] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,27 @@
+[2021-12-13 11:28:53,373] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.check_imageFile manual__2021-12-13T11:28:51.554361+00:00 [queued]>
+[2021-12-13 11:28:53,417] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.check_imageFile manual__2021-12-13T11:28:51.554361+00:00 [queued]>
+[2021-12-13 11:28:53,419] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 11:28:53,419] {taskinstance.py:1242} INFO - Starting attempt 1 of 3
+[2021-12-13 11:28:53,420] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-13 11:28:53,446] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): check_imageFile> on 2021-12-13 11:28:51.554361+00:00
+[2021-12-13 11:28:53,456] {standard_task_runner.py:52} INFO - Started process 293 to run task
+[2021-12-13 11:28:53,466] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'check_imageFile', 'manual__2021-12-13T11:28:51.554361+00:00', '--job-id', '853', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp11m9pev4', '--error-file', '/tmp/tmpnj0p36vy']
+[2021-12-13 11:28:53,468] {standard_task_runner.py:77} INFO - Job 853: Subtask check_imageFile
+[2021-12-13 11:28:53,610] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.check_imageFile manual__2021-12-13T11:28:51.554361+00:00 [running]> on host 218df5ddc363
+[2021-12-13 11:28:54,034] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=check_imageFile
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-13T11:28:51.554361+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-13T11:28:51.554361+00:00
+[2021-12-13 11:28:54,038] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2021-12-13 11:28:54,040] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'sha256sum /opt/***/official_data/Image.csv']
+[2021-12-13 11:28:54,076] {subprocess.py:85} INFO - Output:
+[2021-12-13 11:28:54,092] {subprocess.py:89} INFO - e891870a24e5a22c9520c5d417af923366083a3617288cafa3cc18e3fed77b11  /opt/***/official_data/Image.csv
+[2021-12-13 11:28:54,093] {subprocess.py:93} INFO - Command exited with return code 0
+[2021-12-13 11:28:54,218] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=check_imageFile, execution_date=20211213T112851, start_date=20211213T112853, end_date=20211213T112854
+[2021-12-13 11:28:54,327] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-13 11:28:54,669] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

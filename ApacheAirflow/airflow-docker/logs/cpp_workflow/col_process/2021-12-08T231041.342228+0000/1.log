@@ -1,0 +1,22 @@
+[2021-12-08 23:10:49,258] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process manual__2021-12-08T23:10:41.342228+00:00 [queued]>
+[2021-12-08 23:10:49,270] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: cpp_workflow.col_process manual__2021-12-08T23:10:41.342228+00:00 [queued]>
+[2021-12-08 23:10:49,271] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:10:49,271] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-08 23:10:49,271] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-12-08 23:10:49,286] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): col_process> on 2021-12-08 23:10:41.342228+00:00
+[2021-12-08 23:10:49,290] {standard_task_runner.py:52} INFO - Started process 5782 to run task
+[2021-12-08 23:10:49,294] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'cpp_workflow', 'col_process', 'manual__2021-12-08T23:10:41.342228+00:00', '--job-id', '587', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpbemgz0y1', '--error-file', '/tmp/tmpu6h6vd4_']
+[2021-12-08 23:10:49,295] {standard_task_runner.py:77} INFO - Job 587: Subtask col_process
+[2021-12-08 23:10:49,339] {logging_mixin.py:109} INFO - Running <TaskInstance: cpp_workflow.col_process manual__2021-12-08T23:10:41.342228+00:00 [running]> on host b5fd0372bf6e
+[2021-12-08 23:10:49,390] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cpp_workflow
+AIRFLOW_CTX_TASK_ID=col_process
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-08T23:10:41.342228+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-08T23:10:41.342228+00:00
+[2021-12-08 23:10:49,465] {python.py:152} INFO - Done. Returned value was: None
+[2021-12-08 23:10:49,476] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=cpp_workflow, task_id=col_process, execution_date=20211208T231041, start_date=20211208T231049, end_date=20211208T231049
+[2021-12-08 23:10:49,506] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-08 23:10:49,546] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
